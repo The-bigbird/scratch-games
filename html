@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Scratch Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #4d97ff;
+            text-shadow: 2px 2px #000;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .game-card {
+            background: #2d2d2d;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border: 1px solid #4d97ff;
+        }
+
+        .game-card h3 {
+            margin-top: 0;
+            color: #ffab19;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 81%; /* Scratch Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Advanced Scratch Arcade</h1>
+    <p>A collection of high-performance projects pushed to the limit.</p>
+
+    <div class="game-grid">
+
+        <div class="game-card">
+            <h3>Paper Minecraft</h3>
+            <div class="iframe-container">
+                <iframe src="https://scratch.mit.edu/projects/10128407/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <p>A massive 2D logic feat by griffpatch.</p>
+        </div>
+
+        <div class="game-card">
+            <h3>3D Logic Engine</h3>
+            <div class="iframe-container">
+                <iframe src="https://scratch.mit.edu/projects/239533318/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <p>Advanced pen-rendering for a pseudo-3D experience.</p>
+        </div>
+
+        <div class="game-card">
+            <h3>Geometry Dash (Full)</h3>
+            <div class="iframe-container">
+                <iframe src="https://scratch.mit.edu/projects/105500895/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <p>Incredible synchronization and physics engine.</p>
+        </div>
+
+        <div class="game-card">
+            <h3>Appel</h3>
+            <div class="iframe-container">
+                <iframe src="https://scratch.mit.edu/projects/603948630/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <p>The gold standard for smooth platforming physics.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        All games are hosted on MIT Scratch. Support the original creators by visiting their project pages!
+    </footer>
+
+</body>
+</html>
